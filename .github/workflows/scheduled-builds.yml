@@ -2,6 +2,9 @@ name: Trigger Site Rebuild on a CRON Schedule
 on:
   schedule:
     - cron: '*/15 * * * *'
+    
+  workflow_dispatch:
+
 jobs:
   cron:
     runs-on: ubuntu-latest
