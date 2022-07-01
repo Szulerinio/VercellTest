@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Szulerinio/VercellTest/issues"
   },
-  "homepage": "https://github.com/Szulerinio/VercellTest#readme"
+  "homepage": "https://github.com/Szulerinio/VercellTest#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
