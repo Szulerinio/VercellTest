@@ -1,0 +1,12 @@
+name: Trigger Site Rebuild on a CRON Schedule
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Redeploy
+        run: |
+          curl --request POST \
+          --url ${{ secrets.REDEPLOYURL }}'
