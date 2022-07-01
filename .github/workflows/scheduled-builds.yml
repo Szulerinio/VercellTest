@@ -12,4 +12,4 @@ jobs:
       - name: Redeploy
         run: |
           curl --request POST \
-          --url ${{ secrets.REDEPLOYURL }}'
+          --url '${{ secrets.REDEPLOYURL }}'
